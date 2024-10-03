@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Deller Mobil</title>
+    <style>
+      .dark {
+        background-color: #1a202c; /* Dark background */
+        color: white; /* White text */
+      }
+    </style>
+  </head>
+  <body class="bg-red-50 text-gray-900 dark:bg-gray-900 dark:text-white">
+    <!-- Promotion Banner -->
+    <div class="bg-red-600 px-4 py-3 text-white">
+      <p class="text-center text-sm font-medium">
+        FLASH SALE 20% OFF untuk Semua Mobil!
+        <a href="#" class="inline-block underline"
+          >Dapatkan Penawaran Sekarang!</a
+        >
+      </p>
+    </div>
+
+    <!-- Navbar -->
+    <header class="bg-red-100 dark:bg-gray-800">
+      <div class="container mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div
+          class="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between"
+        >
+          <div>
+            <h1 class="text-3xl font-bold">Deller Mobil Terpercaya</h1>
+            <p class="mt-1 text-sm">
+              Mobil Berkualitas dengan Harga Terjangkau
+            </p>
+          </div>
+          <div class="flex items-center gap-4">
+            <button
+              class="inline-flex items-center px-5 py-3 border border-gray-200 bg-white text-gray-900 hover:text-gray-700 focus:ring"
+              type="button"
+            >
+              <a href="#products" class="text-sm font-medium"
+                >Lihat Semua Mobil</a
+              >
+            </button>
+            <button
+              class="inline-block rounded bg-red-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-red-700"
+              type="button"
+            >
+              <a href="#contact" class="text-white">Chat Penjual!</a>
+            </button>
+            <button
+              id="toggleTheme"
+              class="p-2 rounded bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-white"
+            >
+              Toggle Mode Gelap
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="bg-red-50 dark:bg-gray-800">
+        <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+          <div class="max-w-lg mx-auto text-center">
+            <h2 class="text-2xl font-bold md:text-3xl">
+              Pilihan Mobil Terbaik untuk Anda
+            </h2>
+            <p class="mt-4">
+              Temukan mobil impian Anda dengan berbagai pilihan yang menarik.
+            </p>
+          </div>
+          <div class="mt-8 mx-auto max-w-xl">
+            <form action="#" class="sm:flex sm:gap-4">
+              <div class="sm:flex-1">
+                <input
+                  type="search"
+                  placeholder="Cari Mobil"
+                  class="w-full p-3 bg-white border border-gray-200 rounded-md shadow-sm focus:ring focus:ring-red-400 dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                />
+              </div>
+              <button
+                type="submit"
+                class="group mt-4 w-full flex justify-center items-center gap-2 rounded-md bg-red-600 px-5 py-3 text-white sm:mt-0 sm:w-auto"
+              >
+                <span class="text-sm font-medium">Cari</span>
+                <svg
+                  class="w-5 h-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product List -->
+      <section
+        id="products"
+        class="container grid grid-cols-1 gap-8 px-8 py-12 mx-auto sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <!-- Card 1 -->
+        <div
+          class="group block border rounded-lg shadow-lg transition-transform transform hover:scale-105 dark:bg-gray-800"
+        >
+          <img
+            src="img/1.jpg"
+            alt="Mobil Sedan - Model A"
+            class="h-64 w-full object-cover rounded-t-lg"
+          />
+          <div class="mt-3 text-sm p-4">
+            <h3 class="text-gray-900 dark:text-white group-hover:underline">
+              Mobil Sedan - Model A
+            </h3>
+            <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              Tahun: 2021
+            </p>
+            <p class="text-gray-900 dark:text-white">Rp 300.000.000</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div
+          class="group block border rounded-lg shadow-lg transition-transform transform hover:scale-105 dark:bg-gray-800"
+        >
+          <img
+            src="img/2.jpg"
+            alt="Mobil SUV - Model B"
+            class="h-64 w-full object-cover rounded-t-lg"
+          />
+          <div class="mt-3 text-sm p-4">
+            <h3 class="text-gray-900 dark:text-white group-hover:underline">
+              Mobil SUV - Model B
+            </h3>
+            <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              Tahun: 2020
+            </p>
+            <p class="text-gray-900 dark:text-white">Rp 450.000.000</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="group block border rounded-lg shadow-lg transition-transform transform hover:scale-105 dark:bg-gray-800"
+        >
+          <img
+            src="img/3.jpg"
+            alt="Mobil Hatchback - Model C"
+            class="h-64 w-full object-cover rounded-t-lg"
+          />
+          <div class="mt-3 text-sm p-4">
+            <h3 class="text-gray-900 dark:text-white group-hover:underline">
+              Mobil Hatchback - Model C
+            </h3>
+            <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              Tahun: 2019
+            </p>
+            <p class="text-gray-900 dark:text-white">Rp 250.000.000</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div
+          class="group block border rounded-lg shadow-lg transition-transform transform hover:scale-105 dark:bg-gray-800"
+        >
+          <img
+            src="img/4.jpg"
+            alt="Mobil Sport - Model D"
+            class="h-64 w-full object-cover rounded-t-lg"
+          />
+          <div class="mt-3 text-sm p-4">
+            <h3 class="text-gray-900 dark:text-white group-hover:underline">
+              Mobil Sport - Model D
+            </h3>
+            <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              Tahun: 2022
+            </p>
+            <p class="text-gray-900 dark:text-white">Rp 1.200.000.000</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div
+          class="group block border rounded-lg shadow-lg transition-transform transform hover:scale-105 dark:bg-gray-800"
+        >
+          <img
+            src="img/5.jpg"
+            alt="Mobil Convertible - Model E"
+            class="h-64 w-full object-cover rounded-t-lg"
+          />
+          <div class="mt-3 text-sm p-4">
+            <h3 class="text-gray-900 dark:text-white group-hover:underline">
+              Mobil Convertible - Model E
+            </h3>
+            <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              Tahun: 2023
+            </p>
+            <p class="text-gray-900 dark:text-white">Rp 950.000.000</p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div
+          class="group block border rounded-lg shadow-lg transition-transform transform hover:scale-105 dark:bg-gray-800"
+        >
+          <img
+            src="img/6.jpg"
+            alt="Mobil Minivan - Model F"
+            class="h-64 w-full object-cover rounded-t-lg"
+          />
+          <div class="mt-3 text-sm p-4">
+            <h3 class="text-gray-900 dark:text-white group-hover:underline">
+              Mobil Minivan - Model F
+            </h3>
+            <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              Tahun: 2021
+            </p>
+            <p class="text-gray-900 dark:text-white">Rp 600.000.000</p>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div
+          class="group block border rounded-lg shadow-lg transition-transform transform hover:scale-105 dark:bg-gray-800"
+        >
+          <img
+            src="img/7.jpg"
+            alt="Mobil Coupe - Model G"
+            class="h-64 w-full object-cover rounded-t-lg"
+          />
+          <div class="mt-3 text-sm p-4">
+            <h3 class="text-gray-900 dark:text-white group-hover:underline">
+              Mobil Coupe - Model G
+            </h3>
+            <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              Tahun: 2022
+            </p>
+            <p class="text-gray-900 dark:text-white">Rp 800.000.000</p>
+          </div>
+        </div>
+        <!-- Card 8 -->
+
+        <div
+          class="group block border rounded-lg shadow-lg transition-transform transform hover:scale-105 dark:bg-gray-800"
+        >
+          <img
+            src="img/8.jpg"
+            alt="Mobil Electric - Model J"
+            class="h-64 w-full object-cover rounded-t-lg"
+          />
+          <div class="mt-3 text-sm p-4">
+            <h3 class="text-gray-900 dark:text-white group-hover:underline">
+              Mobil Electric - Model J
+            </h3>
+            <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              Tahun: 2023
+            </p>
+            <p class="text-gray-900 dark:text-white">Rp 1.500.000.000</p>
+          </div>
+        </div>
+        <!-- Card 9 -->
+        <div
+          class="group block border rounded-lg shadow-lg transition-transform transform hover:scale-105 dark:bg-gray-800"
+        >
+          <img
+            src="img/9.jpg"
+            alt="Mobil Wagon - Model I"
+            class="h-64 w-full object-cover rounded-t-lg"
+          />
+          <div class="mt-3 text-sm p-4">
+            <h3 class="text-gray-900 dark:text-white group-hover:underline">
+              Mobil Wagon - Model I
+            </h3>
+            <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              Tahun: 2021
+            </p>
+            <p class="text-gray-900 dark:text-white">Rp 400.000.000</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="container mx-auto px-8 py-12">
+        <h2 class="text-2xl font-bold text-center">Hubungi Kami</h2>
+        <form action="#" class="mt-8 max-w-lg mx-auto">
+          <div class="mb-4">
+            <label for="name" class="block mb-2">Nama:</label>
+            <input
+              type="text"
+              id="name"
+              required
+              class="w-full p-3 border border-gray-300 rounded-md dark:bg-gray-700 dark:text-white"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block mb-2">Email:</label>
+            <input
+              type="email"
+              id="email"
+              required
+              class="w-full p-3 border border-gray-300 rounded-md dark:bg-gray-700 dark:text-white"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block mb-2">Pesan:</label>
+            <textarea
+              id="message"
+              rows="4"
+              required
+              class="w-full p-3 border border-gray-300 rounded-md dark:bg-gray-700 dark:text-white"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700"
+          >
+            Kirim Pesan
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-red-100 dark:bg-gray-800 text-center py-4">
+      <div class="container mx-auto">
+        <p class="text-sm text-gray-600 dark:text-gray-400">
+          Ikuti Kami di Media Sosial:
+        </p>
+        <div class="flex justify-center mt-2 space-x-4">
+          <a
+            href="#"
+            class="text-gray-900 dark:text-white hover:text-red-600 dark:hover:text-red-400"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-900 dark:text-white hover:text-red-600 dark:hover:text-red-400"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-900 dark:text-white hover:text-red-600 dark:hover:text-red-400"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-900 dark:text-white hover:text-red-600 dark:hover:text-red-400"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("toggleTheme")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("dark");
+        });
+    </script>
+  </body>
+</html>
